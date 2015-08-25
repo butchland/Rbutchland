@@ -40,4 +40,11 @@ size (nrows and ncols)
 ```{r}
 df_boxstat(mtcars)
 ```
+* `df_columnstat`: constructs a data frame that summarizes the dataframes's
+columns (column names, type and count(NAs))
+```{r}
+df <- data.frame(x=c(1,2,3),y=c("a","b",NA),z=c("a","b",NA))
+df$z = as.character(df$z)
+df_columnstat(df)
+```
 
