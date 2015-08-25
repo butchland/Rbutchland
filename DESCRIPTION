@@ -1,9 +1,10 @@
 Package: Rbutchland
 Type: Package
-Title: What the package does (short line)
-Version: 1.0
+Title: My Personal Package of Useful and (hopefully) Reuseable Functions
+Version: 0.1.1
 Date: 2015-08-25
-Author: Who wrote it
-Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line)
-License: What license is it under?
+Author: Butch Landingin <butchland@gmail.com>
+Maintainer: Butch Landingin <butchland@gmail.com>
+Description: This package collects a bunch of functions that I find useful
+License: MIT + file LICENSE
+Suggests: testthat
