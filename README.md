@@ -45,4 +45,19 @@ df_boxstat(mtcars)
 ## 1     nrows    32
 ## 2     ncols    11
 ```
+* `df_columnstat`: constructs a data frame that summarizes the dataframes's
+columns (column names, type and count(NAs))
+
+```r
+df <- data.frame(x=c(1,2,3),y=c("a","b",NA),z=c("a","b",NA))
+df$z = as.character(df$z)
+df_columnstat(df)
+```
+
+```
+##   column      type na
+## 1      x   numeric  0
+## 2      y    factor  1
+## 3      z character  1
+```
 
