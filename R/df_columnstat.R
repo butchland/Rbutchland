@@ -11,7 +11,7 @@ df_columnstat <- function(df) {
   types <- rep("",length(columns))
   nas <- rep(0,length(columns))
   for(i in 1:length(columns)) {
-    types[i] = class(df[[columns[i]]])
+    types[i] = class(df[[columns[i]]])[1]  # take 1st class
     nas[i] = sum(is.na(df[[columns[i]]]))
   }
   rslt <- data.frame(column=columns,type=types,na=nas)
